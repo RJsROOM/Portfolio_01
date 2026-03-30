@@ -1,0 +1,69 @@
+.Taskbar{
+    display: flex;
+    gap: 0.6rem;
+    bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(63,63,63,0.395);
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    border-radius: 0.75rem;
+    backdrop-filter: blur(5px);
+
+
+    .icon{
+        height: 3rem;
+        width: 3.4rem;
+        padding: 0.65rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/2;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+    }
+
+    .github,
+    .cli{
+        background-color: black;
+    }
+
+    .note{
+        background: linear-gradient(to bottom,rgb(254, 179, 88), rgb(255,153,28));
+    }
+
+    .pdf{
+        background: linear-gradient(to bottom, rgb(247, 76, 101), rgb(252, 41, 73)) ;
+    }
+
+    .calender,
+    .mail{
+        background: linear-gradient(to bottom, rgb(146, 100, 252), rgb(119, 62, 253));
+    }
+
+    .spotify{
+        background: linear-gradient(to bottom, rgb(78,176,33), rgb(51, 155, 3));
+    }
+
+    .link{
+        background: linear-gradient(to bottom, rgb(163,97,170), rgb(162, 53, 174));
+    }
+
+
+    .icon:hover{
+        transform: scale(1.2) translateY(-25%);
+    }
+
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover){
+        transform: scale(1.1) translateY(-10%);
+    }
+
+}
+
+
+// .icon:hover + .icon : this line states that the hovering element as well as the element next to it is selected.
+
+// .icon:has(+ .icon:hover) : this line states that select the icon which is before the hovering element. The + always shows the element after it and since there is no operator to select the element before the hovering element, we use :has() selector.

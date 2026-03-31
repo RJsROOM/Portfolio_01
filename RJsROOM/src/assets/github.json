@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&q=80",
+    "title": "LMS - Learning Management System",
+    "description":
+      "A fully functional frontend for a learning website where users can watch tutorials and lectures. Built to make quality education accessible and impactful.",
+    "tags": ["JavaScript","HTML", "CSS", "Frontend"],
+    "repoLink": "https://github.com/RJsROOM/project-4",
+    "demoLink": null
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+    "title": "EMS - Employee Management System",
+    "description":
+      "A semi-functional Employee Management System built with React. Features task management with new tasks, task counts, and employee data stored via localStorage.",
+    "tags": ["React", "JavaScript", "localStorage"],
+    "repoLink": "https://github.com/RJsROOM/Project-3",
+    "demoLink": null
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600&q=80",
+    "title": "Online Piano",
+    "description":
+      "An interactive online piano built with HTML, CSS, and JavaScript. Play musical notes directly in the browser using keyboard or mouse inputs.",
+    "tags": ["JavaScript", "HTML", "CSS", "Interactive", "Music"],
+    "repoLink": "https://github.com/RJsROOM/FRONTEND/tree/main/frontend_proj/PROJ2%20DAY48-online%20piano",
+    "demoLink": null
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=600&q=80",
+    "title": "YT Shorts UI Clone",
+    "description":
+      "A YouTube Shorts-style UI clone built with frontend technologies. Replicates the vertical short-video scrolling experience of YouTube Shorts.",
+    "tags": ["JavaScript", "HTML", "CSS", "UI Clone", "YouTube"],
+    "repoLink": "https://github.com/RJsROOM/FRONTEND/tree/main/frontend_proj/PROJ3%20DAY50-YT%20shorts",
+    "demoLink": null
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80",
+    "title": "Card Animations (Part 2)",
+    "description":
+      "An advanced set of CSS and JavaScript card animations — the sequel to Part 1. Features smooth hover effects, transitions, and interactive card UI components.",
+    "tags": ["JavaScript", "CSS", "Animations", "UI Components"],
+    "repoLink": "https://github.com/RJsROOM/FRONTEND/tree/main/frontend_proj/PROJ6%20DAY54-%20Card%20animations(part2)",
+    "demoLink": null
+  }
+]

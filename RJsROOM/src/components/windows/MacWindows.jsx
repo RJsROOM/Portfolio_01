@@ -2,9 +2,16 @@ import React from 'react'
 import {Rnd} from 'react-rnd'
 import './window.scss'
 
-const MacWindows = () => {
+const MacWindows = ({children}) => {
   return (
-    <Rnd>
+    <Rnd
+    default={{
+        width:"40vw",
+        height:"30vw",
+        x:150,
+        y:100
+    }}
+    >
         <div className="window">
             <div className="nav">
                 <div className="dots">
@@ -17,7 +24,7 @@ const MacWindows = () => {
                     <p>rjsroom - zsh</p>
                 </div>
             </div>
-            <div className="main-content"></div>
+            <div className="main-content">{children}</div>
         </div>
     </Rnd>
   )

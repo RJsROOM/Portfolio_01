@@ -1,6 +1,6 @@
 import React from 'react'
-import githubData from '.././assets/github.json'
-import MacWindows from './windows/MacWindows'
+import githubData from '../../assets/github.json'
+import MacWindows from './MacWindows'
 import './github.scss'
 
 

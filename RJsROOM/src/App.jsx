@@ -3,7 +3,8 @@ import './app.scss'
 import Taskbar from './components/Taskbar'
 import Nav from './components/Nav'
 import MacWindows from './components/windows/MacWindows'
-import Github from './components/Github'
+import Github from './components/windows/Github'
+import Note from './components/windows/Note'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Taskbar />
 
       <Github />
+      <Note />
     </main>
   )
 }

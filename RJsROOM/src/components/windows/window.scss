@@ -45,4 +45,12 @@
     .main-content{
         height: 100%;
     }
+
+    *::-webkit-scrollbar{
+        width: 8px;
+    }
+    *::-webkit-scrollbar-thumb{
+        background-color: rgba(66, 64, 64, 0.278);
+        border-radius: 4px;
+    }
 }

@@ -30,7 +30,7 @@ const Github = () => {
     <MacWindows>
         <div className="cards">
             {githubData.map(project=>{
-                return <GitCard data={project} />
+                return <GitCard key={project.id} data={project} />
             })}
         </div>
     </MacWindows>

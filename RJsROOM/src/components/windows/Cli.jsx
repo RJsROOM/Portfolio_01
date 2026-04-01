@@ -3,7 +3,7 @@ import MacWindows from './MacWindows'
 import Terminal from 'react-console-emulator'
 import './cli.scss'
 
-const Cli = () => {
+const Cli = ({windowName, setWindowsState}) => {
   const [termKey, setTermKey] = useState(0)
 
   const commands = {
@@ -75,7 +75,7 @@ const Cli = () => {
   ]
 
   return (
-    <MacWindows>
+    <MacWindows windowName={windowName} setWindowsState={setWindowsState}>
       <div className="cli-window">
         <Terminal
           key={termKey}  

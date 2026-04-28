@@ -3,20 +3,100 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,body,#root{
     height: 100%;
     width: 100%;
 }
+
 main{
     height: 100%;
     width: 100%;
-    background-image: url('/wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #08111f;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
+
+.app-background{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: #08111f;
+    overflow: hidden;
+}
+
+.app-background::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 32%),
+        linear-gradient(180deg, rgba(8, 14, 24, 0.1), rgba(8, 14, 24, 0.3)),
+        linear-gradient(90deg, rgba(5, 9, 16, 0.26), rgba(5, 9, 16, 0.08) 38%, rgba(5, 9, 16, 0.24));
+    pointer-events: none;
+    
+}
+
+.background-slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 900ms ease-in-out;
+    will-change: opacity;
+}
+
+.background-slide.is-active{
+    opacity: 1;
+}
+
+.background-slide-fill,
+.background-slide-image{
+    position: absolute;
+}
+
+.background-slide-fill{
+    inset: -3%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(26px) saturate(108%) brightness(0.54);
+    transform: scale(1.08);
+}
+
+.background-slide-image{
+    inset: 4.6rem 1.5rem 6.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-slide-photo{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+    display: block;
+}
+
+.app-shell{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background-color: #262626;
+}
+
+@media (max-width: 768px) {
+    .background-slide-fill{
+        inset: -2%;
+        filter: blur(20px) saturate(106%) brightness(0.56);
+    }
+
+    .background-slide-image{
+        inset: 4.2rem 0.9rem 5.8rem;
+    }
 }
